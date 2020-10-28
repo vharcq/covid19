@@ -22,7 +22,8 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
+      - name: Checkout code
+        uses: actions/checkout@v2
 
       # Runs a single command using the runners shell
       - name: Message Start
@@ -32,9 +33,12 @@ jobs:
       - name: Run a multi-line script
         run: |
           echo wget
-          git pull
+          cd $GITHUB_WORKSPACE
+          echo not needed git pull
           wget https://epistat.sciensano.be/Data/COVID19BE.xlsx
           wget https://epistat.sciensano.be/Data/COVID19BE_CASES_MUNI.json
+          echo we are in $PWD
+          pwd
           git add .
           git commit -m "new version of data"
           git push
