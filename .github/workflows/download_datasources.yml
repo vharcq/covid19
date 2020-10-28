@@ -39,6 +39,8 @@ jobs:
           wget https://epistat.sciensano.be/Data/COVID19BE_CASES_MUNI.json
           echo we are in $PWD
           pwd
+          git config --global user.email "vharcq@gmail.com"
+          git config --global user.name "Vincent Harcq"
           git add .
           git commit -m "new version of data"
           git push
