@@ -44,6 +44,6 @@ jobs:
           git config --global user.email "vharcq@gmail.com"
           git config --global user.name "Vincent Harcq"
           git add .
-          git commit -m "new version of data"
+          git commit -m "new version of data" --allow-empty
           git push
           
