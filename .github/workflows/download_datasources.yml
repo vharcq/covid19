@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Downlaod Datasources
+name: Download Datasources
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the main branch
@@ -35,6 +35,8 @@ jobs:
           echo wget
           cd $GITHUB_WORKSPACE
           echo not needed git pull
+          rm -f *.xlsx*
+          rm -f *.json*
           wget https://epistat.sciensano.be/Data/COVID19BE.xlsx
           wget https://epistat.sciensano.be/Data/COVID19BE_CASES_MUNI.json
           echo we are in $PWD
