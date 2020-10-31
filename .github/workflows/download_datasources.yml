@@ -40,6 +40,7 @@ jobs:
           wget https://epistat.sciensano.be/Data/COVID19BE.xlsx
           wget https://epistat.sciensano.be/Data/COVID19BE_CASES_MUNI.json
           wget https://statbel.fgov.be/sites/default/files/files/opendata/deathday/DEMO_DEATH_OPEN.xlsx
+          wget https://statbel.fgov.be/sites/default/files/files/opendata/bevolking%20naar%20woonplaats%2C%20nationaliteit%20burgelijke%20staat%20%2C%20leeftijd%20en%20geslacht/TF_SOC_POP_STRUCT_2020.xlsx
           echo we are in $PWD
           pwd
           git config --global user.email "vharcq@gmail.com"
