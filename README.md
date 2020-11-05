@@ -6,9 +6,14 @@ git pull, open the power bi and refresh
 
 ## what
 
-Datasets are donwloaded everyhour via github actions from
+Datasets are donwloaded everyhour via github actions from following sites and pushed to here
+
+### COVID
 
 https://epistat.wiv-isp.be/covid/
 
-and pushed to here
+### Stat BEl
+
+https://statbel.fgov.be
+
 
