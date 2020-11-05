@@ -8,11 +8,11 @@ git pull, open the power bi and refresh
 
 Datasets are donwloaded everyhour via github actions from following sites and pushed to here
 
-### COVID
+### Sciensano
 
 https://epistat.wiv-isp.be/covid/
 
-### Stats BEL
+### Office Belge de Statistique - STATBEL
 
 https://statbel.fgov.be
 
