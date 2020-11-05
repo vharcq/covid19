@@ -12,7 +12,7 @@ Datasets are donwloaded everyhour via github actions from following sites and pu
 
 https://epistat.wiv-isp.be/covid/
 
-### Stat BEl
+### Stats BEL
 
 https://statbel.fgov.be
 
