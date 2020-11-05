@@ -32,17 +32,14 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          echo wget
           cd $GITHUB_WORKSPACE
-          echo not needed git pull
           rm -f *.xlsx*
           rm -f *.json*
-          wget https://epistat.sciensano.be/Data/COVID19BE.xlsx
-          wget https://epistat.sciensano.be/Data/COVID19BE_CASES_MUNI.json
-          wget https://statbel.fgov.be/sites/default/files/files/opendata/deathday/DEMO_DEATH_OPEN.xlsx
-          wget https://statbel.fgov.be/sites/default/files/files/opendata/bevolking%20naar%20woonplaats%2C%20nationaliteit%20burgelijke%20staat%20%2C%20leeftijd%20en%20geslacht/TF_SOC_POP_STRUCT_2020.xlsx
+          wget -nv https://epistat.sciensano.be/Data/COVID19BE.xlsx
+          wget -nv https://epistat.sciensano.be/Data/COVID19BE_CASES_MUNI.json
+          wget -nv https://statbel.fgov.be/sites/default/files/files/opendata/deathday/DEMO_DEATH_OPEN.xlsx
+          wget -nv https://statbel.fgov.be/sites/default/files/files/opendata/bevolking%20naar%20woonplaats%2C%20nationaliteit%20burgelijke%20staat%20%2C%20leeftijd%20en%20geslacht/TF_SOC_POP_STRUCT_2020.xlsx
           echo we are in $PWD
-          pwd
           git config --global user.email "vharcq@gmail.com"
           git config --global user.name "Vincent Harcq"
           git add .
