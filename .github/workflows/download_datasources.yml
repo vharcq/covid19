@@ -33,6 +33,7 @@ jobs:
       - name: Run a multi-line script
         run: |
           cd $GITHUB_WORKSPACE
+          git pull
           rm -f *.xlsx*
           rm -f *.json*
           wget -nv https://epistat.sciensano.be/Data/COVID19BE.xlsx
