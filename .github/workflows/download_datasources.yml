@@ -41,7 +41,7 @@ jobs:
           wget -nv https://epistat.sciensano.be/Data/COVID19BE_HOSP.json
           wget -nv https://epistat.sciensano.be/Data/COVID19BE_MORT.json
           wget -nv https://epistat.sciensano.be/Data/COVID19BE_VACC.json
-          wget -nv https://statbel.fgov.be/sites/default/files/files/opendata/deathday/DEMO_DEATH_OPEN.xlsx
+          # 20210520 wget -nv https://statbel.fgov.be/sites/default/files/files/opendata/deathday/DEMO_DEATH_OPEN.xlsx
           wget -nv https://statbel.fgov.be/sites/default/files/files/opendata/bevolking%20naar%20woonplaats%2C%20nationaliteit%20burgelijke%20staat%20%2C%20leeftijd%20en%20geslacht/TF_SOC_POP_STRUCT_2020.xlsx
           echo we are in $PWD
           git config --global user.email "vharcq@gmail.com"
