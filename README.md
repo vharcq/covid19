@@ -16,4 +16,3 @@ https://epistat.wiv-isp.be/covid/
 
 https://statbel.fgov.be
 
-
