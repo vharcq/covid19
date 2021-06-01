@@ -35,6 +35,8 @@ jobs:
           cd $GITHUB_WORKSPACE
           git pull
           rm -f TF_SOC_POP_STRUCT_2020.xlsx
+          rm -f COVID19BE.xlsx
+          rm -f COVID19BE.xlsx.*
           rm -f *.json*
           wget -nv https://epistat.sciensano.be/Data/COVID19BE.xlsx
           wget -nv https://epistat.sciensano.be/Data/COVID19BE_CASES_MUNI.json
